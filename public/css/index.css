@@ -1,0 +1,160 @@
+/* body */
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    max-width: 100%;
+    background-color: #ebebeb;
+}
+
+
+#banner img{
+    display: none;
+    margin: auto;
+    width: 100%;
+    
+}
+
+/* main */
+
+.main-productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.main-productos .section-titulo h2{
+    font-size: 24px;
+    margin: 15px auto;
+    font-weight: bold;
+}
+
+.main-productos .main-sections .producto{
+    display: flex;
+    flex-wrap: wrap;
+    line-height:25px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+ .main-sections .producto i {
+    display: block;
+    font-size: 16px;
+    color: #39b54a;
+    border: 1px solid #39b54a;;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    right: -250px;
+    top: 15px;
+    position: relative;
+    background-color: #fff;   
+}
+
+.producto .precio{
+    padding: 15px;
+    border: 1px solid #ebebeb ;
+    width: 300px;  
+}
+
+.producto h3 {
+    width: 30%;
+}
+
+.producto .precio p{
+    color: #39b54a;
+    width: 70%;
+    text-align: center;
+}
+
+.precio .marca {
+   padding-top: 10px;
+}
+
+
+.precio .precio-oferta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* main completado */
+
+
+
+@media (min-width: 550px){
+
+    
+   
+    #banner {
+        display: inline-block;
+       
+    }
+
+    .container .main-productos .main-sections article{
+        box-shadow : 0px 0px 10px rgb( 100 , 100 , 100 );
+        max-width: 300px;
+    }
+
+}
+
+
+@media (min-width: 768px){
+     
+    .container .header-nav .left-nav{
+        margin-left: 30px;
+    }
+     
+    .container .header-nav .right-nav{
+        margin-right: 30px;
+    }
+    
+    .container .header-nav a{
+        margin: 0 7px;
+    }
+
+    .header-logo img {
+        min-width: 300px;
+        max-height: 600px;  
+    }
+
+    .main-productos {
+        width: 100vw;
+    }
+
+    .main-sections{
+        display: grid;
+        grid-template-columns: 300px 300px; 
+        column-gap: 50px;
+        row-gap: 20px;  
+    }
+
+    .main-productos .main-sections .producto{
+        margin-bottom: 0;   
+    }
+
+    .main-productos .section-titulo {
+        width: 640px;
+        display: inline-block;
+        text-align: start;
+    }
+}
+
+
+@media (min-width: 1400px) {
+
+    .main-sections{
+        grid-template-columns: repeat(4, 300px);   
+    }
+
+    .main-productos .section-titulo {
+        width: 1340px;
+    }
+
+}
+ 

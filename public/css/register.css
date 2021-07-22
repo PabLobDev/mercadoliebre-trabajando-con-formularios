@@ -1,0 +1,131 @@
+.register , .login {
+    width: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.register h1, .login h1{
+    text-align: center;
+}
+
+.register .box-form, .login .box-form{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+
+.register h4{
+    margin: 20px 0;
+}
+
+.register .box-form input, select, .login .box-form input{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.register .box-form label, .login .box-form label{
+    margin: 5px 0;
+}
+
+.register .box-form-cat {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.register .box-form-cat .box-form-check {
+    display: flex;
+    height: 40px;
+    position: relative;
+    align-items: center;
+}
+
+.register .box-form-cat .box-form-check label{
+    padding-left: 10px;
+    
+}
+
+
+.register .box-form small, .login small{
+    color: rgb(238, 14, 51);
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.register .options {
+    display: flex;
+    align-items: center;
+}
+
+.register .options label{
+    font-size: 14px;
+    margin: 5px 5px;
+}
+
+.register .box-button {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0; 
+}
+.register .box-button button, .login .box-button button {
+    padding: 8px 0;
+    color: whitesmoke;
+    background-color: var(--azul);
+    border: none;
+    border-radius: 5px;
+    width: 120px;
+}
+
+.register .box-button button:hover, .login .box-button button:hover{
+    background-color: #fff;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+/* login!!! */
+
+.login .box-remember{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login .box-remember input{
+    margin-right: 5px;
+}
+
+.login .box-button-login{
+    display: flex;
+
+}
+
+@media (min-width: 768px){
+
+     .register, .login{
+         width: 50%;
+     }
+
+     .register .options input {
+        margin-left: 3px;  
+    }
+
+    .register, .login input{
+        border: none;
+    }
+
+    .register .box-button {
+        justify-content:space-evenly;  
+    }
+
+    .register .box-button button, .login .box-button button {
+        width: 180px;
+    }
+
+    .login .box-button button{
+    width: 100%;
+ }
+}
